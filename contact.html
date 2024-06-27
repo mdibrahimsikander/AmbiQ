@@ -35,6 +35,19 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <script src="script.js" type="text/javascript"></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "EkfylFd3gzUYW1Va5",
+      });
+   })();
+  </script>
+
 </head>
 
 <body class="sub_page">
@@ -121,25 +134,17 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
+            
+              <input type="text" placeholder="Your Name" id="f_name" required>
+              <input type="email" placeholder="Your Email" id="email_id" required>
+              <input type="number" placeholder="Your Number" id="phone_no" required>
+              <input type="text" class="message-box" placeholder="Your Message" id="message_id" required>
               <div class="btn_box">
-                <button>
-                  SEND
-                </button>
+                  <button onclick="sendMail()">
+                      SEND
+                  </button>
               </div>
-            </form>
+        
           </div>
         </div>
         <div class="col-md-5">

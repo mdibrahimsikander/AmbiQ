@@ -607,6 +607,10 @@ a:focus {
   margin-top: 15px;
 }
 
+.treatment_section .container .row .customise{
+  margin: 8px;
+}
+
 .treatment_section .box .detail-box h4 {
   font-weight: bold;
 }
