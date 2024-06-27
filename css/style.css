@@ -536,7 +536,11 @@ a:focus {
 }
 
 .book_section .nice-select.open:after {
-  content: "\f106";
+  content: "\f120";
+}
+
+.about_section {
+  margin-top: 50px; /* Adjust this value as needed */
 }
 
 .about_section .row {
