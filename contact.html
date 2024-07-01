@@ -13,7 +13,20 @@
   <meta name="author" content="" />
 
   <title>AmbiQ- Contact Us</title>
-
+  <!-- Favicon -->
+  <link rel="icon" href="favicon/favicon.ico" sizes="16x16" type="image/x-icon">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <!-- Other Favicon Sizes -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favcion/favicon-16x16.png">
+  <!-- Manifest -->
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <!-- Metadata for Microsoft and Android -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -101,6 +114,9 @@
                     <a class="nav-link" href="faq.html">FAQ</a>
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="./careers/careers.html">Careers</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                   </li>
                 </ul>
@@ -130,7 +146,11 @@
             <input type="email" placeholder="Your Email" id="email_id" required>
             <input type="number" placeholder="Your Number" id="phone_no" required>
             <input type="text" class="message-box" placeholder="Your Message" id="message_id" required>
-            <div class="btn_box">
+            <div class="message">
+              <div class="success" id="success">Your Message Succesfully sent</div>
+              <div class="empty" id="empty">Fields Can't be Empty</div>
+            </div>
+            <div class="btn_box btnn">
               <button onclick="sendMail()">
                 SEND
               </button>
@@ -231,6 +251,9 @@
                 <a href="faq.html">
                   FAQ
                 </a>
+                <a href="./careers/careers.html">
+                  Careers
+                </a>
                 <a href="contact.html">
                   Contact us
                 </a>
@@ -264,7 +287,7 @@
     </div>
   </footer>
   <!-- footer section -->
-   
+
   <!-- contact us javascript  -->
   <script src="js/contactformScript.js" type="text/javascript"></script>
 
