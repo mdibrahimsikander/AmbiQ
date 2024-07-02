@@ -72,6 +72,7 @@
 
   .team_section .team_carousel .owl-nav {
     margin-top: 45px;
+    gap:5px;
   }
 
   .team_section .team_carousel .owl-nav button {

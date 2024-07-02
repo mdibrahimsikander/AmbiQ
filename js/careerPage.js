@@ -4,7 +4,7 @@ const jobs = [
     image: "../images/product-manager.svg",
     details:
       "Responsible for planning, executing and closing projects on time and within budget.",
-    openPositions: "1",
+    openPositions: "2",
     link: "../careers/job1PM.html",
   },
   {
@@ -12,7 +12,7 @@ const jobs = [
     image: "../images/Seo.svg",
     details:
       "We are looking for an SEO/SEM expert to manage all search engine optimization and related marketing activities.",
-    openPositions: "1",
+    openPositions: "2",
     link: "../careers/job2seo.html",
   },
 ];
@@ -66,10 +66,11 @@ const createJobListingCards = () => {
     openPositions.classList.add("open-positions");
 
     if (job.openPositions === 1) {
-      openPositions.innerHTML = `${job.openPositions} open position`;
+      openPositions.innerHTML = `${job.openPositions} position`;
     } else {
-      openPositions.innerHTML = `${job.openPositions} open positions`;
+      openPositions.innerHTML = `${job.openPositions} positions`;
     }
+    
 
     jobCard.appendChild(image);
     jobCard.appendChild(title);
